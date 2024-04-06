@@ -1,30 +1,21 @@
-# React + TypeScript + Vite
+Projeto de Cripto Moedas
+Este é um projeto desenvolvido com Vite, TypeScript, HTML e CSS que utiliza uma API externa para obter informações atuais e simultâneas sobre criptomoedas. A API fornece dados como tipo e nome da moeda, valor de mercado, preço, volume e mudança nas últimas 24 horas.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tecnologias Utilizadas
+Vite
+TypeScript
+HTML
+CSS
 
-Currently, two official plugins are available:
+Como Executar o Projeto
+Clone o repositório
+Instale as dependências usando npm install
+Execute o projeto com npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+API Externa
+O projeto utiliza uma API externa para obter os dados das criptomoedas. Você pode encontrar mais informações sobre a API em (https://api.coincap.io/v2/assets?limit=10&offset=0).
 
-## Expanding the ESLint configuration
+Deploy
+O projeto está disponível para visualização em (https://cripto-iota.vercel.app/).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Sinta-se à vontade para clonar e explorar o projeto! Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato.
