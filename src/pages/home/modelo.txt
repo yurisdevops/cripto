@@ -1,0 +1,116 @@
+import { BiSearch } from "react-icons/bi";
+import styles from "./home.module.css";
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+
+//https://coinlib.io/api/v1/coinlist?key=f3607eb9f8dbe2a2&pref=BTC&page=1&order=volume_desc
+
+interface CoinsProps {
+  delta_24h: string;
+  market_cap: string;
+  name: string;
+  price: string;
+  symbol: string;
+  volume_24h: string;
+  formatedPrice: string;
+  formatedMarket: string;
+}
+
+interface DataProps {
+  coins: CoinsProps[];
+}
+
+export function Home() {
+  const [coins, setCoins] = useState<CoinsProps[]>([]);
+
+  useEffect(() => {
+    async function getData() {
+      await fetch(
+        "https://sujeitoprogramador.com/api-cripto/?key=f3607eb9f8dbe2a2"
+      )
+        .then((response) => response.json())
+        .then((data: DataProps) => {
+          let coinsData = data.coins.slice(0, 15);
+
+          let price = Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+          });
+
+          const formartResult = coinsData.map((item) => {
+            const formated = {
+              ...item,
+              formatedPrice: price.format(Number(item.price)),
+              formatedMarket: price.format(Number(item.market_cap)),
+            };
+            return formated;
+          });
+          console.log(formartResult);
+
+          setCoins(formartResult);
+        });
+    }
+    getData();
+  }, []);
+
+  // let cor = coins.map((coins) => {
+  //   coins.delta_24h;
+  // });
+  // console.log(cor);
+
+  return (
+    <>
+      <main className={styles.container}>
+        <form className={styles.form}>
+          <input
+            type="text"
+            name="cripto"
+            id="cripto"
+            placeholder="Digite o simbolo da moeda: BTC..."
+          />
+          <button type="submit">
+            <BiSearch size={30} color="#fff" />
+          </button>
+        </form>
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Moeda</th>
+              <th scope="col">Valor Mercado</th>
+              <th scope="col">Preço</th>
+              <th scope="col">Volume</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            {coins.map((coin) => (
+              <tr key={coin.name} className={styles.tr}>
+                <td className={styles.tdLabel} data-label="Moeda">
+                  <Link className={styles.link} to="/detail/btc">
+                    <span>{coin.name}</span> | {coin.symbol}
+                  </Link>
+                </td>
+                <td className={styles.tdLabel} data-label="Mercado">
+                  {coin.formatedMarket}
+                </td>
+                <td className={styles.tdLabel} data-label="Preco">
+                  {coin.formatedPrice}
+                </td>
+                <td
+                  className={
+                    Number(coin.delta_24h) >= 0
+                      ? styles.tdProfit
+                      : styles.tdLoss
+                  }
+                  data-label="Volume"
+                >
+                  <span>{coin.delta_24h}</span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </main>
+    </>
+  );
+}
