@@ -93,7 +93,7 @@ export function Home() {
             type="text"
             name="cripto"
             id="cripto"
-            placeholder="Digite o simbolo da moeda: BTC..."
+            placeholder="Digite o nome da moeda: ex: Bitcoin..."
             value={input}
             onChange={(e) => setInput(e.target.value.toLowerCase())}
           />
