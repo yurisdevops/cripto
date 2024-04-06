@@ -122,7 +122,7 @@ export function Home() {
                     <div className={styles.name}>
                       <img
                         className={styles.logo}
-                        src={`https://assets.coincap.io/assets/icons/${coin.symbol.toLowerCase()}@2x.png`}
+                        src={`https://assets.coincap.io/assets/icons/${coin.symbol.toLowerCase().trim()}@2x.png`}
                         alt="LOGO MOEDA"
                       />
                       <Link className={styles.link} to={`/detail/${coin.id}`}>
