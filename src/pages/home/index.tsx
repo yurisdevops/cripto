@@ -95,7 +95,7 @@ export function Home() {
             id="cripto"
             placeholder="Digite o simbolo da moeda: BTC..."
             value={input}
-            onChange={(e) => setInput(e.target.value)}
+            onChange={(e) => setInput(e.target.value.toLowerCase())}
           />
           <button type="submit">
             <BiSearch size={30} color="#fff" />
