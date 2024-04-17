@@ -41,7 +41,7 @@ ou
 ```
 yarn dev
 ```
-2. Acesse a aplicação em seu navegador web através do endereço `http://localhost:3000`.
+2. Acesse a aplicação em seu navegador web através do endereço [DevCurrency](https://cripto-iota.vercel.app/).
 
 ## Contribuição
 
