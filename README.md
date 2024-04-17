@@ -44,10 +44,5 @@ yarn dev
 2. Acesse a aplicação em seu navegador web através do endereço `http://localhost:3000`.
 
 ## Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue caso encontre algum problema ou para propor melhorias. Se deseja contribuir com código, por favor, siga estas etapas:
-1. Fork o repositório
-2. Crie uma branch para sua feature (`git checkout -b feature/MinhaFeature`)
-3. Faça commit de suas mudanças (`git commit -am 'Adiciona MinhaFeature'`)
-4. Faça push para a branch (`git push origin feature/MinhaFeature`)
-5. Abra um Pull Request
 
+Sinta-se à vontade para contribuir com sugestões, correções ou novas funcionalidades! 😊🚀
