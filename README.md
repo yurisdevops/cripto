@@ -1,48 +1,115 @@
 # DevCurency
 
-## Descrição
-O DevCurency é um projeto desenvolvido utilizando Vite, React, TypeScript, CSS Modules e integração com uma API externa de criptomoedas. Esta aplicação web permite aos usuários visualizar informações sobre diferentes criptomoedas, como nome, valor de mercado, volume e variação de valor. Além disso, os usuários podem realizar buscas personalizadas por suas moedas preferidas através do nome. O DevCurency é totalmente responsivo para dispositivos móveis.
+> Aplicação web para consulta de informações sobre criptomoedas, desenvolvida com Vite, React e TypeScript.
+
+O **DevCurency** é uma aplicação que permite aos usuários explorar informações detalhadas sobre diversas criptomoedas. Com uma interface intuitiva e responsiva, o projeto fornece dados como valor de mercado, volume, variação de valor e permite buscas personalizadas por moedas específicas.
+
+## Índice
+
+- [Descrição do Projeto](#descrição-do-projeto)
+- [Funcionalidades Principais](#funcionalidades-principais)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Como Usar](#como-usar)
+- [Deploy na Vercel](#deploy-na-vercel)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
+
+## Descrição do Projeto
+
+O **DevCurency** é uma aplicação web construída com **Vite**, **React**, **TypeScript** e **CSS Modules**, que consome uma API de criptomoedas para exibir informações detalhadas. Os usuários podem:
+
+- Visualizar detalhes como nome, valor de mercado, volume e variação de valor das criptomoedas.
+- Buscar por moedas específicas através do nome.
+- Acessar a aplicação em qualquer dispositivo, graças à interface responsiva.
+
+## Funcionalidades Principais
+
+- **Exibição de dados sobre criptomoedas:** Nome, valor de mercado, volume e variação de valor.
+- **Busca personalizada:** Localize moedas específicas pelo nome.
+- **Interface responsiva:** Adaptada para dispositivos móveis e desktop.
 
 ## Tecnologias Utilizadas
-- Vite
-- React
-- TypeScript
-- CSS Modules
 
-## Funcionalidades
-- Visualização de informações sobre criptomoedas, incluindo nome, valor de mercado, volume e variação de valor.
-- Busca personalizada por moedas através do nome.
-- Interface responsiva para dispositivos móveis.
+- **Vite:** Ferramenta de build rápido para projetos modernos.
+- **React:** Biblioteca para construção de interfaces de usuário.
+- **TypeScript:** Superset do JavaScript para melhor escalabilidade e segurança de código.
+- **CSS Modules:** Estilização modular para manter o código CSS organizado e reutilizável.
 
-## Instalação
-1. Clone o repositório para sua máquina local:
-```
+## Como Usar
+
+### 1. Clonar o Repositório:
+
+```bash
 git clone https://github.com/seu-usuario/cripto.git
-```
-2. Navegue até o diretório do projeto:
-```
 cd cripto
 ```
-3. Instale as dependências utilizando o npm ou yarn:
-```
+
+### 2. Instalar Dependências:
+
+Com `npm`:
+
+```bash
 npm install
 ```
-ou
-```
+
+Com `yarn`:
+
+```bash
 yarn install
 ```
 
-## Uso
-1. Inicie o servidor de desenvolvimento:
+### 3. Configurar a API Key:
+
+Crie um arquivo `.env` na raiz do projeto e configure sua chave da API de criptomoedas:
+
+```env
+VITE_CRYPTO_API_KEY=SUA_API_KEY_AQUI
 ```
+
+### 4. Iniciar o Servidor de Desenvolvimento:
+
+Com `npm`:
+
+```bash
 npm run dev
 ```
-ou
-```
+
+Com `yarn`:
+
+```bash
 yarn dev
 ```
-2. Acesse a aplicação em seu navegador web através do endereço [DevCurrency](https://cripto-iota.vercel.app/).
+
+### 5. Abrir no Navegador:
+
+Acesse a aplicação em [DevCurency](https://cripto-iota.vercel.app/).
+
+## Deploy na Vercel
+
+Este projeto está hospedado na **Vercel**. Para fazer o deploy do projeto na Vercel, siga estas etapas:
+
+1. Crie uma conta na [Vercel](https://vercel.com/), se ainda não tiver uma.
+2. Clique em **"New Project"** no painel da Vercel.
+3. Conecte sua conta do GitHub e selecione este repositório.
+4. Configure a variável de ambiente `VITE_CRYPTO_API_KEY` com sua API Key.
+5. Clique em **Deploy** e aguarde a publicação. Após o deploy, o link para acessar a aplicação será fornecido.
 
 ## Contribuição
 
-Sinta-se à vontade para contribuir com sugestões, correções ou novas funcionalidades! 😊🚀
+Contribuições são bem-vindas! Para contribuir com o projeto, siga os seguintes passos:
+
+1. **Fork** este repositório.
+2. Crie uma nova branch (`git checkout -b minha-nova-feature`).
+3. Faça suas alterações e adicione testes, se necessário.
+4. **Commit** suas alterações (`git commit -am 'Adiciona nova feature'`).
+5. **Push** para a branch (`git push origin minha-nova-feature`).
+6. Abra um **Pull Request** explicando suas mudanças.
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
+
+---
+
+### 🚀 **Explore o mundo das criptomoedas com o DevCurency!**
+```
