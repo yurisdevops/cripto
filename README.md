@@ -1,3 +1,5 @@
+
+
 # DevCurency
 
 > Aplicação web para consulta de informações sobre criptomoedas, desenvolvida com Vite, React e TypeScript.
@@ -16,7 +18,7 @@ O **DevCurency** é uma aplicação que permite aos usuários explorar informaç
 
 ## Descrição do Projeto
 
-O **DevCurency** é uma aplicação web construída com **Vite**, **React**, **TypeScript** e **CSS Modules**, que consome uma API de criptomoedas para exibir informações detalhadas. Os usuários podem:
+O **DevCurency** é uma aplicação web construída com **Vite**, **React**, **TypeScript** e **CSS Modules**, que consome a API da [CoinCap](https://www.coincap.io/) para exibir informações detalhadas. Os usuários podem:
 
 - Visualizar detalhes como nome, valor de mercado, volume e variação de valor das criptomoedas.
 - Buscar por moedas específicas através do nome.
@@ -34,6 +36,7 @@ O **DevCurency** é uma aplicação web construída com **Vite**, **React**, **T
 - **React:** Biblioteca para construção de interfaces de usuário.
 - **TypeScript:** Superset do JavaScript para melhor escalabilidade e segurança de código.
 - **CSS Modules:** Estilização modular para manter o código CSS organizado e reutilizável.
+- **API da CoinCap:** Fonte de dados para informações sobre criptomoedas.
 
 ## Como Usar
 
