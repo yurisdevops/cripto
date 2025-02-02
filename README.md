@@ -58,15 +58,7 @@ Com `yarn`:
 yarn install
 ```
 
-### 3. Configurar a API Key:
-
-Crie um arquivo `.env` na raiz do projeto e configure sua chave da API de criptomoedas:
-
-```env
-VITE_CRYPTO_API_KEY=SUA_API_KEY_AQUI
-```
-
-### 4. Iniciar o Servidor de Desenvolvimento:
+### 3. Iniciar o Servidor de Desenvolvimento:
 
 Com `npm`:
 
@@ -80,7 +72,7 @@ Com `yarn`:
 yarn dev
 ```
 
-### 5. Abrir no Navegador:
+### 4. Abrir no Navegador:
 
 Acesse a aplicação em [DevCurency](https://cripto-iota.vercel.app/).
 
@@ -91,8 +83,16 @@ Este projeto está hospedado na **Vercel**. Para fazer o deploy do projeto na Ve
 1. Crie uma conta na [Vercel](https://vercel.com/), se ainda não tiver uma.
 2. Clique em **"New Project"** no painel da Vercel.
 3. Conecte sua conta do GitHub e selecione este repositório.
-4. Configure a variável de ambiente `VITE_CRYPTO_API_KEY` com sua API Key.
+4. O Vercel detectará automaticamente o tipo de projeto e configurará o deploy para você.
 5. Clique em **Deploy** e aguarde a publicação. Após o deploy, o link para acessar a aplicação será fornecido.
+
+## Estrutura do Projeto
+
+- **`public`**: Arquivos públicos.
+- **`src`**:
+  - **`assets`**: Recursos estáticos.
+  - **`components`**: Componentes reutilizáveis.
+  - **`pages`**: Páginas principais.
 
 ## Contribuição
 
@@ -112,4 +112,4 @@ Este projeto está licenciado sob a [MIT License](https://opensource.org/license
 ---
 
 ### 🚀 **Explore o mundo das criptomoedas com o DevCurency!**
-```
+
